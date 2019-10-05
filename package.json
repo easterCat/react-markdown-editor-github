@@ -1,17 +1,35 @@
 {
-  "name": "react-default-markdown-editor",
+  "name": "react-markdown-editor-github",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.23.5",
+    "babel-plugin-import": "^1.12.2",
+    "customize-cra": "^0.8.0",
+    "highlight.js": "^9.15.10",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "markdown-it": "^10.0.0",
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-deflist": "^2.0.3",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-footnote": "^3.0.2",
+    "markdown-it-ins": "^3.0.0",
+    "markdown-it-mark": "^3.0.0",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-task-lists": "^2.1.1",
     "react": "^16.10.2",
+    "react-app-rewired": "^2.1.3",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "uuid": "^3.3.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": "react-app"
