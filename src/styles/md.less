@@ -4,6 +4,100 @@
   position: relative;
 }
 
+.rmd-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: calc(100%-16px);
+  height: 40px;
+  min-height: 38px;
+  padding: 0px 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: #fbfafa;
+  user-select: none;
+
+  .rmd-navigation {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navigation-nav {
+    flex: 0 0 1;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+  }
+  .button-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .button {
+      position: relative;
+      min-width: 24px;
+      height: 28px;
+      margin-right: 5px;
+      display: inline-block;
+      cursor: pointer;
+      line-height: 28px;
+      text-align: center;
+      color: #999;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  ul,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    line-height: 1.1;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  h6 {
+    font-size: 12px;
+  }
+}
+
 .rmd-container {
   width: 100%;
   min-height: 300px;
@@ -12,12 +106,12 @@
   &-editor,
   &-result {
     overflow-y: scroll;
-    box-shadow: -10px 2px 6px 10px rgba(0, 0, 0, 0.03);
+    box-shadow: -3px 1px 2px 3px rgba(0, 0, 0, 0.03);
   }
 
   &-editor {
     position: absolute;
-    top: 0;
+    top: 41px;
     left: 0;
     bottom: 0;
     width: 50%;
@@ -30,7 +124,7 @@
 
   &-result {
     position: absolute;
-    top: 0;
+    top: 41px;
     right: 0;
     left: 50%;
     bottom: 0;
